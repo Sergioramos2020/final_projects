@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UrbanStyles - Inicio</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <!--Link de Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!--Link de icono-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header class="bg-dark text-white text-center p-3">
+    <h1>UrbanStyles</h1>
+    <nav class="navcolor" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+      <!-- Logo y nombre -->
+      <div style="display: flex; align-items: center;">
+        <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/t-shirt.png" alt="Logo UrbanStyles"
+            style="width: 30px; margin-right: 10px;">
+          <span style="font-size: 24px; font-weight: bold; color: white;">UrbanStyles S.A.S.</span>
+        </a>
+      </div>
+
+      <!-- Menú -->
+      <div>
+        <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none;">Inicio</a> |
+        <a href="productos.html" style="color: white; margin: 0 10px; text-decoration: none;">Productos</a> |
+        <a href="acerca.html" style="color: white; margin: 0 10px; text-decoration: none;">Acerca</a> |
+        <a href="contacto.html" style="color: white; margin: 0 10px; text-decoration: none;">Contacto</a> |
+        <a href="login.html" style="color: white; margin: 0 10px; text-decoration: none;">Iniciar Sesión</a>
+      </div>
+    </nav>
+  </header>
+
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/producto1.jpg" class="d-block carousel-img" alt="Producto 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/producto2.jpg" class="d-block carousel-img" alt="Producto 2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/producto4.jpg" class="d-block carousel-img" alt="Producto 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <section class="container py-4">
+  <h2 class="text-center mb-4">Productos Destacados</h2>
+  <div class="row">
+    
+    <!-- Producto 1 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/producto21.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5>Pantalón Urbano</h5>
+          
+          <div class="precio-contenedor">
+            <div class="descuento">-20%</div>
+            <div class="precios">
+              <div class="precio-anterior">$ 150.000</div>
+              <div class="precio-actual">$ 120.000</div>
+              <div class="precio-financiado">$ 135.000 <span class="financiacion">Addi</span></div>
+            </div>
+          </div>          
+          <button class="button-car mt-2">
+            Agregar <i class="fas fa-shopping-cart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/producto2.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5>Camiseta Oversize</h5>
+
+          <div class="precio-contenedor">
+            <div class="descuento">-25%</div>
+            <div class="precios">
+              <div class="precio-anterior">$ 80.000</div>
+              <div class="precio-actual">$ 60.000</div>
+              <div class="precio-financiado">$ 70.000 <span class="financiacion">Addi</span></div>
+            </div>
+          </div>
+          <button class="button-car mt-2">
+            Agregar <i class="fas fa-shopping-cart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="img/producto22.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5>Gorras New Era</h5>
+
+          <div class="precio-contenedor">
+            <div class="descuento">-10%</div>
+            <div class="precios">
+              <div class="precio-anterior">$ 100.000</div>
+              <div class="precio-actual">$ 90.000</div>
+              <div class="precio-financiado">$ 95.000 <span class="financiacion">Addi</span></div>
+            </div>
+          </div>
+          <button class="button-car mt-2">
+            Agregar <i class="fas fa-shopping-cart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>  <section class="container py-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/producto24.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Zapatos Jelly Platform</h5>
+            <p>$120.000</p>
+            <button class="button-car mt-2">
+            Agregar <i class="fas fa-shopping-cart"></i>
+          </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/producto27.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Zapatos Gravity Force</h5>
+            <p>$250.000</p>
+            <button class="button-car mt-2">
+            Agregar <i class="fas fa-shopping-cart"></i>
+          </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/producto26.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Jordán</h5>
+            <p>$180.000</p>
+            <button class="button-car mt-2">
+            Agregar <i class="fas fa-shopping-cart"></i>
+          </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+    <p>&copy; 2025 UrbanStyles S.A.S. - Todos los derechos reservados.</p>
+
+    <p>Síguenos en:</p>
+    <div class="social-icons">
+      <a href="#">
+        <img
+          src="https://exitocol.vtexassets.com/assets/vtex.file-manager-graphql/images/265e9abc-98ba-4a3a-853a-6621ae02b215___04893a9a4b9811e3f2f290590e457cff.svg"
+          width="29" height="29" alt="Facebook">
+      </a>
+      <a href="#">
+        <img
+          src="https://exitocol.vtexassets.com/assets/vtex.file-manager-graphql/images/8f931f43-81bf-4f61-aa49-b9e27811e7f1___f02b492b0300362047ed0966fb56dade.svg"
+          width="29" height="29" alt="Instagram">
+      </a>
+      <a href="#">
+        <img
+          src="https://exitocol.vtexassets.com/assets/vtex.file-manager-graphql/images/16382aa3-0b1c-4848-8132-dac0a67ebf90___caee933792e582efd21d3650f872d97a.svg"
+          width="29" height="29" alt="X / Twitter">
+      </a>
+      <a href="#">
+        <img
+          src="https://exitocol.vtexassets.com/assets/vtex.file-manager-graphql/images/d1303b25-3536-4c6e-b12d-980a336d6ba1___d8ea8326ff767e1ae8bebca73e6994d5.svg"
+          width="29" height="29" alt="TikTok">
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto - UrbanStyles</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/contacto.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="bg-dark text-white text-center p-3">
+    <h1>UrbanStyles</h1>
+    <nav class="navcolor" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+      <!-- Logo y nombre -->
+      <div style="display: flex; align-items: center;">
+        <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/t-shirt.png" alt="Logo UrbanStyles"
+            style="width: 30px; margin-right: 10px;">
+          <span style="font-size: 24px; font-weight: bold; color: white;">UrbanStyles S.A.S.</span>
+        </a>
+      </div>
+
+      <!-- Menú -->
+      <div>
+        <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none;">Inicio</a> |
+        <a href="productos.html" style="color: white; margin: 0 10px; text-decoration: none;">Productos</a> |
+        <a href="acerca.html" style="color: white; margin: 0 10px; text-decoration: none;">Acerca</a> |
+        <a href="contacto.html" style="color: white; margin: 0 10px; text-decoration: none;">Contacto</a> |
+        <a href="login.html" style="color: white; margin: 0 10px; text-decoration: none;">Iniciar Sesión</a>
+      </div>
+    </nav>
+  </header>
+  <div class="contacto-container">
+    <h2>Contáctanos</h2>
+    <form id="formContacto">
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" required></textarea>
+      </div>
+      <div style="text-align: center;">
+        <button class="btn-enviar" type="submit">Enviar mensaje</button>
+      </div>
+    </form>
+
+    <div class="info-contacto">
+      <p><strong>Teléfono:</strong> +57 320 123 4567</p>
+      <p><strong>Email:</strong> contacto@urbanstyles.com</p>
+      <p><strong>Dirección:</strong> Calle 123 #45-67, Medellín, Colombia</p>
+    </div>
+  </div>
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+    <p>&copy; 2025 UrbanStyles S.A.S. - Todos los derechos reservados.</p>
+
+    <p>Síguenos en:</p>
+    <div class="social-icons">
+      <a href="#">
+        <img
+          src="https://exitocol.vtexassets.com/assets/vtex.file-manager-graphql/images/265e9abc-98ba-4a3a-853a-6621ae02b215___04893a9a4b9811e3f2f290590e457cff.svg"
+          width="29" height="29" alt="Facebook">
+      </a>
+      <a href="#">
+        <img
+          src="https://exitocol.vtexassets.com/assets/vtex.file-manager-graphql/images/8f931f43-81bf-4f61-aa49-b9e27811e7f1___f02b492b0300362047ed0966fb56dade.svg"
+          width="29" height="29" alt="Instagram">
+      </a>
+      <a href="#">
+        <img
+          src="https://exitocol.vtexassets.com/assets/vtex.file-manager-graphql/images/16382aa3-0b1c-4848-8132-dac0a67ebf90___caee933792e582efd21d3650f872d97a.svg"
+          width="29" height="29" alt="X / Twitter">
+      </a>
+      <a href="#">
+        <img
+          src="https://exitocol.vtexassets.com/assets/vtex.file-manager-graphql/images/d1303b25-3536-4c6e-b12d-980a336d6ba1___d8ea8326ff767e1ae8bebca73e6994d5.svg"
+          width="29" height="29" alt="TikTok">
+      </a>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("formContacto").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Mensaje enviado correctamente. ¡Gracias por contactarnos!");
+      this.reset();
+    });
+  </script>
+
+</body>
+
+</html>
