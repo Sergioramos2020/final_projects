@@ -6,17 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UrbanStyles - Inicio</title>
   <link rel="stylesheet" href="css/estilos.css" />
-  <!--Link de Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!--Link de icono-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
   <header class="bg-dark text-white text-center p-3">
     <h1>UrbanStyles</h1>
-    <nav class="navcolor" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
-      <!-- Logo y nombre -->
+    <nav class="navcolor"
+      style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
       <div style="display: flex; align-items: center;">
         <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
           <img src="https://img.icons8.com/ios-filled/50/ffffff/t-shirt.png" alt="Logo UrbanStyles"
@@ -25,15 +23,19 @@
         </a>
       </div>
 
-      <!-- Menú -->
       <div>
         <a href="index.html" style="color: white; margin: 0 10px; text-decoration: none;">Inicio</a> |
         <a href="productos.html" style="color: white; margin: 0 10px; text-decoration: none;">Productos</a> |
         <a href="acerca.html" style="color: white; margin: 0 10px; text-decoration: none;">Acerca</a> |
         <a href="contacto.html" style="color: white; margin: 0 10px; text-decoration: none;">Contacto</a> |
-        <a href="login.html" style="color: white; margin: 0 10px; text-decoration: none;">Iniciar Sesión</a>
+        <a href="login.html" style="color: white; margin: 0 10px; text-decoration: none;">Iniciar Sesión</a> |
+        <a href="#" style="color: white; margin: 0 10px; text-decoration: none;" data-bs-toggle="modal"
+          data-bs-target="#cartModal">
+          <i class="fas fa-shopping-cart"></i> Carrito (<span id="cart-counter">0</span>)
+        </a>
       </div>
     </nav>
+
   </header>
 
   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
@@ -57,77 +59,72 @@
   </div>
 
   <section class="container py-4">
-  <h2 class="text-center mb-4">Productos Destacados</h2>
-  <div class="row">
-    
-    <!-- Producto 1 -->
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/producto21.jpg" class="card-img-top">
-        <div class="card-body">
-          <h5>Pantalón Urbano</h5>
-          
-          <div class="precio-contenedor">
-            <div class="descuento">-20%</div>
-            <div class="precios">
-              <div class="precio-anterior">$ 150.000</div>
-              <div class="precio-actual">$ 120.000</div>
-              <div class="precio-financiado">$ 135.000 <span class="financiacion">Addi</span></div>
-            </div>
-          </div>          
-          <button class="button-car mt-2">
-            Agregar <i class="fas fa-shopping-cart"></i>
-          </button>
-        </div>
-      </div>
-    </div>
+    <h2 class="text-center mb-4">Productos Destacados</h2>
+    <div class="row">
 
-    <!-- Producto 2 -->
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/producto2.jpg" class="card-img-top">
-        <div class="card-body">
-          <h5>Camiseta Oversize</h5>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/producto21.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Pantalón Urbano</h5>
 
-          <div class="precio-contenedor">
-            <div class="descuento">-25%</div>
-            <div class="precios">
-              <div class="precio-anterior">$ 80.000</div>
-              <div class="precio-actual">$ 60.000</div>
-              <div class="precio-financiado">$ 70.000 <span class="financiacion">Addi</span></div>
+            <div class="precio-contenedor">
+              <div class="descuento">-20%</div>
+              <div class="precios">
+                <div class="precio-anterior">$ 150.000</div>
+                <div class="precio-actual">$ 120.000</div>
+                <div class="precio-financiado">$ 135.000 <span class="financiacion">Addi</span></div>
+              </div>
             </div>
+            <button class="button-car mt-2" onclick="addToCart(22)"> Agregar <i class="fas fa-shopping-cart"></i>
+            </button>
           </div>
-          <button class="button-car mt-2">
-            Agregar <i class="fas fa-shopping-cart"></i>
-          </button>
         </div>
       </div>
-    </div>
 
-    <!-- Producto 3 -->
-    <div class="col-md-4">
-      <div class="card">
-        <img src="img/producto22.jpg" class="card-img-top">
-        <div class="card-body">
-          <h5>Gorras New Era</h5>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/producto2.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Camiseta Oversize</h5>
 
-          <div class="precio-contenedor">
-            <div class="descuento">-10%</div>
-            <div class="precios">
-              <div class="precio-anterior">$ 100.000</div>
-              <div class="precio-actual">$ 90.000</div>
-              <div class="precio-financiado">$ 95.000 <span class="financiacion">Addi</span></div>
+            <div class="precio-contenedor">
+              <div class="descuento">-25%</div>
+              <div class="precios">
+                <div class="precio-anterior">$ 80.000</div>
+                <div class="precio-actual">$ 60.000</div>
+                <div class="precio-financiado">$ 70.000 <span class="financiacion">Addi</span></div>
+              </div>
             </div>
+            <button class="button-car mt-2" onclick="addToCart(1)"> Agregar <i class="fas fa-shopping-cart"></i>
+            </button>
           </div>
-          <button class="button-car mt-2">
-            Agregar <i class="fas fa-shopping-cart"></i>
-          </button>
         </div>
       </div>
-    </div>
 
-  </div>
-</section>  <section class="container py-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/producto22.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Gorras New Era</h5>
+
+            <div class="precio-contenedor">
+              <div class="descuento">-10%</div>
+              <div class="precios">
+                <div class="precio-anterior">$ 100.000</div>
+                <div class="precio-actual">$ 90.000</div>
+                <div class="precio-financiado">$ 95.000 <span class="financiacion">Addi</span></div>
+              </div>
+            </div>
+            <button class="button-car mt-2" onclick="addToCart(23)"> Agregar <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="container py-4">
     <div class="row">
       <div class="col-md-4">
         <div class="card">
@@ -135,9 +132,8 @@
           <div class="card-body">
             <h5>Zapatos Jelly Platform</h5>
             <p>$120.000</p>
-            <button class="button-car mt-2">
-            Agregar <i class="fas fa-shopping-cart"></i>
-          </button>
+            <button class="button-car mt-2" onclick="addToCart(24)"> Agregar <i class="fas fa-shopping-cart"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -147,9 +143,8 @@
           <div class="card-body">
             <h5>Zapatos Gravity Force</h5>
             <p>$250.000</p>
-            <button class="button-car mt-2">
-            Agregar <i class="fas fa-shopping-cart"></i>
-          </button>
+            <button class="button-car mt-2" onclick="addToCart(19)"> Agregar <i class="fas fa-shopping-cart"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -159,14 +154,46 @@
           <div class="card-body">
             <h5>Jordán</h5>
             <p>$180.000</p>
-            <button class="button-car mt-2">
-            Agregar <i class="fas fa-shopping-cart"></i>
-          </button>
+            <button class="button-car mt-2" onclick="addToCart(21)"> Agregar <i class="fas fa-shopping-cart"></i>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Tu Carrito de Compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Producto</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Total</th>
+                <th scope="col">Acción</th>
+              </tr>
+            </thead>
+            <tbody id="cart-items">
+            </tbody>
+          </table>
+          <div class="text-end">
+            <h5>Total: $<span id="cart-total">0.00</span></h5>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" onclick="emptyCart()">Vaciar Carrito</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Proceder al Pago</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer class="bg-dark text-white text-center py-3 mt-4">
     <p>&copy; 2025 UrbanStyles S.A.S. - Todos los derechos reservados.</p>
 
@@ -196,5 +223,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/funcionProductos.js"></script>
 </body>
+
 </html>

@@ -1,7 +1,7 @@
  // Array de objetos que representa los productos disponibles en la tienda.
     // Cada objeto tiene un 'id' único, un 'name', un 'price' y la ruta de la 'image'.
     const products = [
-      { id: 1, name: "Chaqueta Urbana", price: 120000, image: "img/producto2.jpg" },
+      { id: 1, name: "Chaqueta Urbana", price: 60000, image: "img/producto2.jpg" },
       { id: 2, name: "Camiseta Oversize Jean", price: 70000, image: "img/producto1.jpg" },
       { id: 3, name: "Buzo Lana Alpaca", price: 90000, image: "img/producto19.jpg" },
       { id: 4, name: "Camiseta Urbana", price: 30000, image: "img/producto4.jpg" },
@@ -22,6 +22,9 @@
       { id: 19, name: "Zapatos Gravity Force", price: 250000, image: "img/producto27.jpg" },
       { id: 20, name: "Mocasines UnderBowl", price: 300000, image: "img/producto28.jpg" },
       { id: 21, name: "Jordán", price: 180000, image: "img/producto26.jpg" },
+      { id: 22, name: "Pantalón Urbano", price: 120000, image: "img/producto21.jpg" },
+      { id: 23, name: "Gorras New Era", price: 90000, image: "img/producto22.jpg" },
+      { id: 24, name: "Zapatos Jelly Platform", price: 120000, image: "img/producto24.jpg" },
     ];
 
     // Variable global 'cart' que almacenará los productos que el usuario ha añadido al carrito.
